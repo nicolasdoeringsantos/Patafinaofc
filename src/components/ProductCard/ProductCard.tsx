@@ -18,11 +18,11 @@ export default function ProductCard({ product }: Props) {
     >
       <div>
         {/* CONTAINER DA IMAGEM */}
-        <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-slate-800">
+        <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-slate-800 flex items-center justify-center p-8">
           <img
             src={product.image}
             alt={product.name}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="max-h-44 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
           <span className="absolute left-3 top-3 rounded-full border border-white/10 bg-slate-950/80 px-3 py-1 text-xs font-semibold text-cyan-300 backdrop-blur-md">
             {product.category}

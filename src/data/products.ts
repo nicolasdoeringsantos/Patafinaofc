@@ -1,4 +1,5 @@
 import type { Product } from "../types/Product";
+import americanoImg from "../assets/americano.png";
 
 export const products: Product[] = [
   {
@@ -15,7 +16,7 @@ export const products: Product[] = [
     name: "Peitoral americano para cães",
     category: "Cães",
     price: 29.9,
-    image: "https://placehold.co/400x400/0f172a/38bdf8.png?text=Peitoral+Americano",
+    image: americanoImg,
     rating: 5,
     featured: true,
   },
