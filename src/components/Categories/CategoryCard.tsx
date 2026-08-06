@@ -9,6 +9,7 @@ export interface Category {
   image?: string;
   color?: string;
   count?: string;
+  path?: string;
 }
 
 interface CategoryCardProps {

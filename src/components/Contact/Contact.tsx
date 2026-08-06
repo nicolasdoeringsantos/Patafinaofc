@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <section id="contato" className="relative w-full overflow-hidden bg-slate-950 py-24">
       {/* GLOW DE FUNDO */}
-      <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-[120px] pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-125 w-200 -translate-x-1/2 rounded-full bg-blue-600/10 blur-[120px] pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         {/* CABEÇALHO */}

@@ -54,7 +54,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900 pt-24"
+      className="relative min-h-screen w-full overflow-hidden bg-linear-to-br from-slate-950 via-blue-950 to-blue-900 pt-24"
     >
       {/* GLOWS DE FUNDO */}
       <motion.div
@@ -89,7 +89,7 @@ export default function Hero() {
 
             <h1 className="mt-4 text-4xl font-black leading-tight text-white lg:text-5xl">
               Qualidade que se vê no acabamento e se sente na {" "}
-              <span className="bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">
                 resistência e segurança
               </span>{" "}
              de cada peça.

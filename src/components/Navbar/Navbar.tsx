@@ -1,31 +1,30 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaBars,
   FaFileAlt,
   FaPaw,
   FaSearch,
   FaTimes,
-  FaUserCircle,
 } from "react-icons/fa";
 
 const links = [
   {
     title: "Home",
-    href: "#inicio",
+    href: "/",
   },
   {
     title: "Empresa",
-    href: "#sobre",
+    href: "/#sobre",
   },
   {
     title: "Catálogo",
-    href: "#catalogo",
+    href: "/#catalogo",
   },
- 
   {
     title: "Contato",
-    href: "#contato",
+    href: "/#contato",
   },
 ];
 
@@ -70,7 +69,7 @@ export default function Navbar() {
           className={`
           mx-auto
           flex
-          h-[68px]
+          h-17
           max-w-7xl
           items-center
           justify-between
@@ -95,8 +94,8 @@ export default function Navbar() {
 
           {/* LOGO */}
 
-          <a
-            href="#inicio"
+          <Link
+            to="/"
             className="flex items-center gap-4"
           >
 
@@ -108,7 +107,7 @@ export default function Navbar() {
               items-center
               justify-center
               rounded-2xl
-              bg-gradient-to-br
+              bg-linear-to-br
               from-blue-700
               to-cyan-500
               shadow-lg
@@ -180,29 +179,20 @@ export default function Navbar() {
 
             </div>
 
-          </a>
+          </Link>
 
           {/* MENU DESKTOP */}
 
           <nav className="hidden xl:flex items-center gap-10">
-
             {links.map((item) => (
-
-              <motion.a
-
+              <motion.div
                 key={item.title}
-
-                whileHover={{
-                  y: -2,
-                }}
-
-                whileTap={{
-                  scale: .95,
-                }}
-
-                href={item.href}
-
-                className={`
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to={item.href}
+                  className={`
                 relative
                 font-semibold
 
@@ -217,21 +207,18 @@ export default function Navbar() {
                 after:absolute
                 after:left-0
                 after:-bottom-2
-                after:h-[2px]
+                after:h-0.5
                 after:w-0
                 after:bg-blue-500
                 after:transition-all
 
                 hover:after:w-full
                 `}
-              >
-
-                {item.title}
-
-              </motion.a>
-
+                >
+                  {item.title}
+                </Link>
+              </motion.div>
             ))}
-
           </nav>
                     {/* LADO DIREITO */}
 
@@ -298,10 +285,6 @@ export default function Navbar() {
 
             </motion.div>
 
-            {/* ÁREA DO CLIENTE */}
-
-            
-
             {/* CTA */}
 
             <motion.button
@@ -322,7 +305,7 @@ export default function Navbar() {
 
               rounded-full
 
-              bg-gradient-to-r
+              bg-linear-to-r
               from-[#2563EB]
               to-[#3B82F6]
 
@@ -434,10 +417,9 @@ export default function Navbar() {
             <nav className="flex flex-col gap-6">
 
               {links.map((item) => (
-
-                <a
+                <Link
                   key={item.title}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setMenuOpen(false)}
                   className="
                   border-b
@@ -450,11 +432,8 @@ export default function Navbar() {
                   transition
                   "
                 >
-
                   {item.title}
-
-                </a>
-
+                </Link>
               ))}
                             {/* BUSCA MOBILE */}
 
@@ -493,32 +472,6 @@ export default function Navbar() {
 
               </div>
 
-              {/* ÁREA DO CLIENTE */}
-
-              <button
-                className="
-                mt-2
-                flex
-                items-center
-                justify-center
-                gap-3
-                rounded-full
-                border
-                border-slate-200
-                py-4
-                font-semibold
-                text-slate-700
-                transition
-                hover:bg-slate-50
-                "
-              >
-
-                <FaUserCircle />
-
-                Área do Cliente
-
-              </button>
-
               {/* CTA */}
 
               <motion.button
@@ -541,7 +494,7 @@ export default function Navbar() {
 
                 rounded-full
 
-                bg-gradient-to-r
+                bg-linear-to-r
 
                 from-[#2563EB]
 

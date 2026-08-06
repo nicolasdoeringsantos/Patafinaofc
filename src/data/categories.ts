@@ -7,6 +7,7 @@ export const categories = [
     icon: FaDog,
     color: "bg-blue-500/20 text-cyan-300",
     count: "Guias, coleiras e peitorais",
+    path: "/caes",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const categories = [
     icon: FaCat,
     color: "bg-pink-500/20 text-pink-300",
     count: "Peitorais e guias exclusivas",
+    path: "/gatos",
   },
   {
     id: 3,
@@ -21,5 +23,6 @@ export const categories = [
     icon: FaShower,
     color: "bg-teal-500/20 text-teal-300",
     count: "Lacinhos adesivos e gravatas",
+    path: "/banho-e-tosa",
   },
 ];

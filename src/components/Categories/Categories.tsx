@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { categories } from "../../data/categories";
 import CategoryCard from "./CategoryCard";
 
 export default function Categories() {
   return (
-    <section className="relative w-full overflow-hidden bg-slate-950 py-20 text-white">
+    <section id="catalogo" className="relative w-full overflow-hidden bg-slate-950 py-20 text-white">
       {/* Glow centralizado de fundo */}
       <div
         className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/10"
@@ -49,7 +50,9 @@ export default function Categories() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <CategoryCard category={category} />
+              <Link to={category.path} className="block">
+                <CategoryCard category={category} />
+              </Link>
             </motion.div>
           ))}
         </motion.div>
