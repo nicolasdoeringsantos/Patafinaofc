@@ -5,6 +5,15 @@ import coleiraImg from "../assets/images/coleira.png";
 import coleira2Img from "../assets/images/coleira2.png";
 import cintoImg from "../assets/images/cinto.png";
 import modelolacoImg from "../assets/images/modelolaco.png";
+import gatoImg from "../assets/images/gato.jpg";
+import lacoImg from "../assets/images/laco.png";
+import laco2Img from "../assets/images/laco2.png";
+import laco3Img from "../assets/images/laco3.png";
+import laco4Img from "../assets/images/laco4.png";
+import laco5Img from "../assets/images/laco5.png";
+import laco6Img from "../assets/images/laco6.png";
+import laco7Img from "../assets/images/laco7.png";
+import laco8Img from "../assets/images/laco8.png";
 
 export const products: Product[] = [
   {
@@ -63,24 +72,87 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    name: "Kit Gravatas Premium",
+    name: "Laço",
     category: "Banho & Tosa",
     price: 35.9,
-    image: "https://placehold.co/400x400/0f172a/38bdf8?text=Kit+Gravatas",
+    image: lacoImg,
     rating: 5,
     featured: true,
   },
   {
     id: 8,
+    name: "Laço",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco2Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 9,
+    name: "Laço",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco3Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 10,
+    name: "Laço",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco4Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 11,
+    name: "Bandana",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco5Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 12,
+    name: "Laço",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco6Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 13,
+    name: "Laço",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco7Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 14,
+    name: "Kit brasil",
+    category: "Banho & Tosa",
+    price: 35.9,
+    image: laco8Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 15,
     name: "Coleira ajustável para gatos",
     category: "Gatos",
     price: 39.9,
-    image: "https://placehold.co/400x400/0f172a/38bdf8?text=Coleira+Gatos",
+    image: gatoImg,
     rating: 4,
     featured: false,
   },
   {
-    id: 9,
+    id: 16,
     name: "Brinquedo interativo felino",
     category: "Gatos",
     price: 24.9,

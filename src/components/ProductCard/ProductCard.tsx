@@ -14,7 +14,9 @@ export default function ProductCard({ product }: Props) {
       ? "object-[center_80%]"
       : product.name === "Laços para banho e tosa"
         ? "object-[center_75%]"
-        : "object-center";
+        : product.name === "Coleira ajustável para gatos"
+          ? "object-center"
+          : "object-center";
 
   return (
     <motion.div
