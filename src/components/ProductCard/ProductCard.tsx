@@ -9,7 +9,12 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   const message = `Olá! Gostaria de mais informações e um orçamento para o produto: ${product.name}`;
   const whatsappUrl = `https://wa.me/5500000000000?text=${encodeURIComponent(message)}`;
-  const imagePositionClass = product.name === "Cinto + Coleira dupla" ? "object-[center_80%]" : "object-center";
+  const imagePositionClass =
+    product.name === "Cinto + Coleira dupla"
+      ? "object-[center_80%]"
+      : product.name === "Laços para banho e tosa"
+        ? "object-[center_75%]"
+        : "object-center";
 
   return (
     <motion.div

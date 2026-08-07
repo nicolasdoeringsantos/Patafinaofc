@@ -4,6 +4,7 @@ import regulavelImg from "../assets/images/regulavel.png";
 import coleiraImg from "../assets/images/coleira.png";
 import coleira2Img from "../assets/images/coleira2.png";
 import cintoImg from "../assets/images/cinto.png";
+import modelolacoImg from "../assets/images/modelolaco.png";
 
 export const products: Product[] = [
   {
@@ -11,7 +12,7 @@ export const products: Product[] = [
     name: "Laços para banho e tosa",
     category: "Banho & Tosa",
     price: 49.9,
-    image: "https://placehold.co/400x400/0f172a/38bdf8?text=Banho+e+Tosa",
+    image: modelolacoImg,
     rating: 5,
     featured: true,
   },
