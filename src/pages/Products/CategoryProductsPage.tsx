@@ -20,7 +20,7 @@ export default function CategoryProductsPage({ category }: CategoryProductsPageP
             {category}
           </span>
           <h1 className="mt-4 text-4xl font-black lg:text-5xl">
-            {category} em destaque
+            Mais Procurados para {category}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-blue-200/80">
             Navegue pelos produtos mais procurados para {category.toLowerCase()} e escolha itens que vão deixar seu estoque pronto para atender com estilo e qualidade.

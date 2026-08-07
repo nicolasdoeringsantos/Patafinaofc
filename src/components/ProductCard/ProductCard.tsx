@@ -9,6 +9,7 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   const message = `Olá! Gostaria de mais informações e um orçamento para o produto: ${product.name}`;
   const whatsappUrl = `https://wa.me/5500000000000?text=${encodeURIComponent(message)}`;
+  const imagePositionClass = product.name === "Cinto + Coleira dupla" ? "object-[center_80%]" : "object-center";
 
   return (
     <motion.div
@@ -18,11 +19,11 @@ export default function ProductCard({ product }: Props) {
     >
       <div>
         {/* CONTAINER DA IMAGEM */}
-        <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-slate-800 flex items-center justify-center p-8">
+        <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-slate-900">
           <img
             src={product.image}
             alt={product.name}
-            className="max-h-44 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+            className={`h-full w-full object-cover ${imagePositionClass} transition-transform duration-300 group-hover:scale-105`}
           />
           <span className="absolute left-3 top-3 rounded-full border border-white/10 bg-slate-950/80 px-3 py-1 text-xs font-semibold text-cyan-300 backdrop-blur-md">
             {product.category}

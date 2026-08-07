@@ -1,5 +1,9 @@
 import type { Product } from "../types/Product";
-import americanoImg from "../assets/americano.png";
+import americanoImg from "../assets/images/americano.png";
+import regulavelImg from "../assets/images/regulavel.png";
+import coleiraImg from "../assets/images/coleira.png";
+import coleira2Img from "../assets/images/coleira2.png";
+import cintoImg from "../assets/images/cinto.png";
 
 export const products: Product[] = [
   {
@@ -25,12 +29,39 @@ export const products: Product[] = [
     name: "Peitoral regulável para cães",
     category: "Cães",
     price: 79.9,
-    image: "https://placehold.co/400x400/0f172a/38bdf8?text=Peitoral+Regulavel",
+    image: regulavelImg,
     rating: 5,
     featured: true,
   },
   {
     id: 4,
+    name: "Coleira",
+    category: "Cães",
+    price: 35.9,
+    image: coleiraImg,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 5,
+    name: "Coleira revorçada + guia",
+    category: "Cães",
+    price: 35.9,
+    image: coleira2Img,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 6,
+    name: "Cinto + Coleira dupla",
+    category: "Cães",
+    price: 35.9,
+    image: cintoImg,
+    rating: 5,
+    featured: true,
+  },
+  {
+    id: 7,
     name: "Kit Gravatas Premium",
     category: "Banho & Tosa",
     price: 35.9,
@@ -39,7 +70,7 @@ export const products: Product[] = [
     featured: true,
   },
   {
-    id: 5,
+    id: 8,
     name: "Coleira ajustável para gatos",
     category: "Gatos",
     price: 39.9,
@@ -48,7 +79,7 @@ export const products: Product[] = [
     featured: false,
   },
   {
-    id: 6,
+    id: 9,
     name: "Brinquedo interativo felino",
     category: "Gatos",
     price: 24.9,
